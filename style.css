@@ -1,0 +1,130 @@
+html,
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+container {
+  display: grid;
+  padding: 4em;
+}
+
+nav {
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  padding: 1em;
+}
+
+nav .logo {
+  max-width: 200px;
+}
+
+section {
+  margin: 7em auto 2em;
+  max-width: 1000px;
+}
+
+.aboutus {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 4em;
+}
+
+.aboutus .people {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+}
+
+.person .profile-picture {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.person h3,
+.person h4 {
+  font-weight: 500;
+  margin: 10px 0 0;
+}
+
+.client-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em;
+  padding: 2em 0;
+}
+
+.client-list a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.client-list img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 50px;
+  filter: saturate(0);
+}
+
+.client-list .bright {
+  filter: brightness(0) invert(1) !important;
+}
+
+@media screen and (max-width: 900px) {
+  .client-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .aboutus {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutus .people {
+    margin: auto;
+  }
+
+  .aboutus .person {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .client-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  container {
+    padding: 3em;
+  }
+
+  section {
+    margin: 4em auto 0;
+  }
+
+  .aboutus .people {
+    grid-template-columns: 1fr;
+  }
+
+  .aboutus .people {
+    margin: auto;
+  }
+
+  .aboutus .person {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  .client-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
