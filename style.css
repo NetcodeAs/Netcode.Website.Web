@@ -46,7 +46,7 @@ section {
   color: white;
 }
 
-.person .profile-picture {
+.person .portrait {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -121,19 +121,14 @@ section {
   }
 
   section {
-    margin: 2em auto 0;
+    margin: 3em auto 0;
   }
 
   .aboutus .people {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .aboutus .people {
-    margin: auto;
-  }
-
-  .aboutus .person {
-    max-width: 75%;
     margin: auto;
   }
 
