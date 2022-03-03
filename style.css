@@ -138,6 +138,17 @@ content {
         margin: auto;
     }
 
+    .img-cut {
+        overflow: hidden;
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .img-cut img {
+        width: 210px;
+        margin-top: -30px;
+        margin-left: -22px;
+    }
+
     .client-list {
         grid-template-columns: repeat(2, 1fr);
     }
