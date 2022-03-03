@@ -146,3 +146,14 @@ section {
     gap: 3em;
     padding: 2em 0;
 }
+
+.img-cut {
+    overflow: hidden;
+    max-width: 171.2px;
+    max-height: 171.2px;
+}
+.img-cut img {
+    width: 210px;
+    margin-top: -30px;
+    margin-left: -22px;
+}
